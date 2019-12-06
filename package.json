@@ -1,0 +1,23 @@
+{
+  "name": "petfind.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niicksan/petfind.me.git"
+  },
+  "author": "Nik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niicksan/petfind.me/issues"
+  },
+  "homepage": "https://github.com/Niicksan/petfind.me#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
