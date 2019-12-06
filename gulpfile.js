@@ -15,15 +15,19 @@ gulp.task('sass', function(){
     }))
 });
 
-gulp.task('watch', function(){
-  gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
-  // Other watchers
-})
-
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
+      watch: true,
       baseDir: 'app'
     },
   })
 })
+
+gulp.task('watch', gulp.parallel('browserSync', 'sass'), function (){
+  gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
+  // Reloads the browser whenever HTML or JS files change
+  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/js/**/*.js', browserSync.reload);
+  // Other watchers
+});
