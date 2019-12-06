@@ -1,2 +1,5 @@
 .testing {
-  width: 71.42857%; }
+  width: 71.42857%;
+  height: auto;
+  padding: 2em;
+  margin: 3em; }
