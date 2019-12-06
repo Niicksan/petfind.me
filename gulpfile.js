@@ -2,6 +2,9 @@
 var gulp = require('gulp');
 // Requires the gulp-sass plugin
 var sass = require('gulp-sass');
+// Requires the Gulp Useref
+var useref = require('gulp-useref');
+var gulpIf = require('gulp-if');
 // Requires the Browser Sync
 var browserSync = require('browser-sync').create();
 
@@ -15,19 +18,26 @@ gulp.task('sass', function(){
     }))
 });
 
-gulp.task('browserSync', function() {
+gulp.task("watch", function() {
+
   browserSync.init({
     server: {
-      watch: true,
       baseDir: 'app'
     },
   })
-})
 
-gulp.task('watch', gulp.parallel('browserSync', 'sass'), function (){
-  gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
+	gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
+
   // Reloads the browser whenever HTML or JS files change
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+	gulp.watch( 'app/*.html' ).on('change', browserSync.reload );
+	gulp.watch( 'app/js/**/*.js' ).on('change', browserSync.reload );
   // Other watchers
+});
+
+gulp.task('useref', function(){
+  return gulp.src('app/*.html')
+    .pipe(useref())
+    // Minifies only if it's a JavaScript file
+    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulp.dest('dist'))
 });
