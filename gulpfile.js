@@ -10,9 +10,9 @@ var browserSync = require('browser-sync').create();
 
 
 gulp.task('sass', function(){
-  return gulp.src('app/scss/**/*.scss') // Get source files with gulp.src // Gets all files ending with .scss in app/scss and children dirs
+  return gulp.src('scss/**/*.scss') // Get source files with gulp.src // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
-    .pipe(gulp.dest('app/css')) // Outputs the file in the destination folder
+    .pipe(gulp.dest('css')) // Outputs the file in the destination folder
     .pipe(browserSync.reload({ // Browser Sync
       stream: true
     }))
@@ -22,20 +22,20 @@ gulp.task("watch", function() {
 
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: './'
     },
   })
 
-	gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
+	gulp.watch('scss/**/*.scss', gulp.series('sass'));
 
   // Reloads the browser whenever HTML or JS files change
-	gulp.watch( 'app/*.html' ).on('change', browserSync.reload );
-	gulp.watch( 'app/js/**/*.js' ).on('change', browserSync.reload );
+	gulp.watch( '*.html' ).on('change', browserSync.reload );
+	gulp.watch( 'js/**/*.js' ).on('change', browserSync.reload );
   // Other watchers
 });
 
 gulp.task('useref', function(){
-  return gulp.src('app/*.html')
+  return gulp.src('*.html')
     .pipe(useref())
     // Minifies only if it's a JavaScript file
     .pipe(gulpIf('*.js', uglify()))
