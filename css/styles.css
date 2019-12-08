@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 header {
-  background-image: url(/images/petttttt.jpg);
+  background-image: url(../images/petttttt.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
