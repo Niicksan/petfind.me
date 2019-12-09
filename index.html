@@ -8,30 +8,35 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/nav-bar.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Pet find me</title>
+    <title>PetFind.Me</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <figure class="brand">Responsive</figure>
-        <nav class="menu">
+        <div class="logo">
+          <a class="brand" href="../index.html">
+            <i class="fa fa-paw fa-6x"></i>
+            <img src="../images/logo.png" alt="PetFind.Me">
+        </a>
+        </div>
+
+        <nav class="menu mobile">
             <input type="checkbox" id="menuToggle">
             <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
-            <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Sobre</li></a>
-                <a href="#"><li>Serviços</li></a>
-                <a href="#"><li>Equipe</li></a>
-                <a href="#"><li>Contato</li></a>
+            <ul id="menu">
+                <a href="#" onmouseover="chcl('black')" onmouseout="chcl('white')"><li>Начало</li></a>
+                <a href="#"><li>Контакти</li></a>
+                <a href="#"><li>Подай сигнал</li></a>
             </ul>
         </nav>
       </header>
 
-      <main>
+      <main3
         <h1>This is very important message</h1>
+
       </main>
 
-      <footer>
+      <footer class="footer">
 
       </footer>
 

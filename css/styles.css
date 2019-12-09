@@ -1,66 +1,88 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 header {
-  background-image: url(../images/petttttt.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 0.85;
-  height: 15em;
-  line-height: 1.5em;
+  width: 100%;
+  height: 8em;
+  line-height: 50px;
+  font-family: sans-serif;
+  background-color: #1C6375;
+  position: relative; }
+  header a {
+    text-decoration: none; }
+
+.logo {
+  position: relative;
+  margin-left: 1em; }
+  .logo .brand {
+    height: 8em;
+    margin-left: 0;
+    display: flex; }
+    .logo .brand i {
+      font-size: 4.2em;
+      color: #fff;
+      margin: auto;
+      margin-right: 0;
+      margin-left: 0.3em;
+      z-index: 2; }
+    .logo .brand img {
+      width: 12em;
+      height: 8em;
+      position: absolute;
+      left: 3.5em;
+      z-index: 1; }
+
+.menu {
+  width: 72%;
+  height: 70%;
+  float: right;
   text-align: center;
-  font-family: sans-serif; }
-  header .brand {
-    width: auto;
-    height: 100%;
-    float: left;
-    margin: 0 0 0 5%; }
-  header .menu {
-    width: 60%;
-    height: 100%;
-    float: right; }
-    header .menu #menuToggle {
-      display: none; }
-    header .menu .menu-icon {
-      display: none; }
-    header .menu ul {
-      width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3; }
+  .menu ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end; }
+    .menu ul li {
+      list-style: none; }
+    .menu ul a {
+      width: 20%;
       height: inherit;
-      margin: 0;
-      padding: 0;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex; }
-      header .menu ul a {
-        width: 20%;
-        height: inherit;
-        color: #222;
-        display: inline-block;
-        text-decoration: none; }
-        header .menu ul a li {
-          list-style: none; }
-      header .menu ul a:hover {
-        background-color: #222;
-        color: #fff; }
+      color: #fff;
+      display: inline-block;
+      padding: 0.2em; }
+      .menu ul a:hover {
+        background-color: #fff;
+        color: #1C6375; }
+
+#menuToggle {
+  display: none;
+  position: absolute;
+  top: 2em; }
+
+.menu-icon {
+  display: none; }
+
+.footer {
+  background-color: #000;
+  width: 100%;
+  height: 10em;
+  color: white;
+  text-align: center; }
 
 @media screen and (max-width: 768px) {
   .menu {
     width: 100%;
-    height: auto; }
-    .menu #menuToggle:checked ~ ul {
-      max-height: 350px; }
-    .menu .menu-icon {
-      width: 100px;
-      height: inherit;
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      line-height: 60px; }
-      .menu .menu-icon i {
-        font-size: 1.7em; }
+    height: auto;
+    top: 0;
+    z-index: 3; }
     .menu ul {
       display: block;
       max-height: 0;
@@ -74,5 +96,22 @@ header {
         text-align: left;
         width: 100%;
         height: 50px;
-        background-color: #f1c40f;
-        padding: 10px 0px 10px 5%; } }
+        background-color: #1C6375;
+        padding: 10px 0px 10px 5%;
+        border-radius: 0; }
+        .menu ul a li {
+          width: 100%; }
+  .menu-icon {
+    width: 100px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 8em; }
+    .menu-icon i {
+      font-size: 1.8em;
+      color: #fff;
+      z-index: 5; }
+  #menuToggle:checked ~ ul {
+    max-height: 350px; } }
