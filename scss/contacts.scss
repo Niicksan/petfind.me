@@ -1,0 +1,86 @@
+.contacts {
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 1)),url(../images/petttttt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.form-holder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 4em;
+}
+
+.contact-title {
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+
+    h1 {
+        font-size: 1.8em;
+        line-height: 3em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+form {
+    margin-top: 1.2em;
+    transition: all 4s ease-in-out;
+    width: 100%;
+
+    .form-control {
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: #fff;
+        font-size: 1.1em;
+
+        &::-webkit-input-placeholder {
+            color: #fafafa;
+        }
+    }
+
+    .bgcl {
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0.5;
+        margin-bottom: 0.5em;
+    }
+
+    input {
+        height: 3em;
+    }
+
+    .submit {
+        background: #1C6375;
+        border-color: transparent;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 1em;
+        width: 100%;
+
+        &:hover {
+            background: #f44336;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    .submit {
+        display: flex;
+    }
+}
