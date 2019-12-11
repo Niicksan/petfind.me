@@ -8,7 +8,7 @@ body {
 
 main {
   position: relative;
-  min-height: 80vh; }
+  min-height: 100vh; }
 
 header {
   width: 100%;
@@ -94,7 +94,7 @@ header {
       -ms-transition: max-height 0.3s;
       -o-transition: max-height 0.3s;
       transition: max-height 0.3s;
-      padding-top: 1em; }
+      padding-top: 0.8em; }
       .menu ul a {
         text-align: left;
         width: 100%;
