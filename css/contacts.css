@@ -4,14 +4,13 @@
   background-position: center;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .form-holder {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-top: 9em; }
+  width: 58%; }
 
 .contact-title {
   color: #fff;
@@ -24,16 +23,15 @@
     font-size: 1.2em; }
 
 form {
-  margin-top: 1.3em;
-  transition: all 1.5s ease-in-out;
-  width: 100%; }
+  width: 100%;
+  transition: all 1.5s ease-in-out; }
   form .form-control {
     width: 100%;
     border: none;
     outline: none;
     border-bottom: 1px solid gray;
     color: #fff;
-    font-size: 1.1em; }
+    font-size: 1.2em; }
     form .form-control::-webkit-input-placeholder {
       color: #fafafa; }
   form .bgcl {
@@ -55,8 +53,12 @@ form {
       background: #f44336;
       cursor: pointer; }
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 0.1em; }
-  .submit {
-    white-space: normal; } }
+@media screen and (max-width: 480px) {
+  .form-holder h1 {
+    font-size: 1.5em; } }
+
+@media screen and (max-width: 960px) {
+  .form-holder {
+    width: 85%; }
+    .form-holder .submit {
+      white-space: normal; } }
