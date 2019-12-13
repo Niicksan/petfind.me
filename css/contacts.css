@@ -8,47 +8,45 @@
 
 .form-holder {
   width: 58%; }
-
-.contact-title {
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 2.5em;
-  transition: all 4s ease-in-out; }
-  .contact-title h1 {
-    font-size: 1.8em; }
-  .contact-title h2 {
-    font-size: 1.2em; }
-
-form {
-  width: 100%;
-  transition: all 1.5s ease-in-out; }
-  form .form-control {
+  .form-holder .contact-title {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2.5em;
+    transition: all 4s ease-in-out; }
+    .form-holder .contact-title h1 {
+      font-size: 1.8em; }
+    .form-holder .contact-title h2 {
+      font-size: 1.2em; }
+  .form-holder form {
     width: 100%;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color: #fff;
-    font-size: 1.2em; }
-    form .form-control::-webkit-input-placeholder {
-      color: #fafafa; }
-  form .bgcl {
-    background: rgba(0, 0, 0, 0.8);
-    opacity: 0.5;
-    margin-bottom: 0.5em; }
-  form input {
-    height: 3em; }
-  form .submit {
-    background: #1C6375;
-    border-color: transparent;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-top: 1em;
-    width: 100%; }
-    form .submit:hover {
-      background: #f44336;
-      cursor: pointer; }
+    transition: all 1.5s ease-in-out; }
+    .form-holder form .form-control {
+      width: 100%;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid gray;
+      color: #fff;
+      font-size: 1.2em; }
+      .form-holder form .form-control::-webkit-input-placeholder {
+        color: #fafafa; }
+    .form-holder form .bgcl {
+      background: rgba(0, 0, 0, 0.8);
+      opacity: 0.5;
+      margin-bottom: 0.5em; }
+    .form-holder form input {
+      height: 3em; }
+    .form-holder form .submit {
+      background: #1C6375;
+      border-color: transparent;
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: 1em;
+      width: 100%; }
+      .form-holder form .submit:hover {
+        background: #f44336;
+        cursor: pointer; }
 
 @media screen and (max-width: 480px) {
   .form-holder h1 {

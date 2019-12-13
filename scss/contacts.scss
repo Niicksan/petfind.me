@@ -9,63 +9,63 @@
 
 .form-holder {
     width: 58%;
-}
 
-.contact-title {
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 2.5em;
-    transition: all 4s ease-in-out;
-
-    h1 {
-        font-size: 1.8em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-}
-
-form {
-    width: 100%;
-    transition: all 1.5s ease-in-out;
-
-    .form-control {
-        width: 100%;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid gray;
+    .contact-title {
         color: #fff;
-        font-size: 1.2em;
+        text-transform: uppercase;
+        margin-bottom: 2.5em;
+        transition: all 4s ease-in-out;
 
-        &::-webkit-input-placeholder {
-            color: #fafafa;
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-size: 1.2em;
         }
     }
 
-    .bgcl {
-        background: rgba(0, 0, 0, 0.8);
-        opacity: 0.5;
-        margin-bottom: 0.5em;
-    }
-
-    input {
-        height: 3em;
-    }
-
-    .submit {
-        background: #1C6375;
-        border-color: transparent;
-        color: #fff;
-        font-size: 1.2em;
-        font-weight: bold;
-        letter-spacing: 2px;
-        margin-top: 1em;
+    form {
         width: 100%;
+        transition: all 1.5s ease-in-out;
 
-        &:hover {
-            background: #f44336;
-            cursor: pointer;
+        .form-control {
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;
+            color: #fff;
+            font-size: 1.2em;
+
+            &::-webkit-input-placeholder {
+                color: #fafafa;
+            }
+        }
+
+        .bgcl {
+            background: rgba(0, 0, 0, 0.8);
+            opacity: 0.5;
+            margin-bottom: 0.5em;
+        }
+
+        input {
+            height: 3em;
+        }
+
+        .submit {
+            background: #1C6375;
+            border-color: transparent;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 1em;
+            width: 100%;
+
+            &:hover {
+                background: #f44336;
+                cursor: pointer;
+            }
         }
     }
 }
