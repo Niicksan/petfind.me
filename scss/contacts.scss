@@ -9,31 +9,37 @@
 
 .form-holder {
     width: 58%;
+    margin: 3em auto;
 
     .contact-title {
         color: #fff;
         text-transform: uppercase;
         margin-bottom: 2.5em;
-        transition: all 4s ease-in-out;
+        transition: all 2.5s ease-in;
 
         h1 {
             font-size: 1.8em;
         }
-
-        h2 {
+        /*/h2 {
             font-size: 1.2em;
-        }
+        }*/
     }
 
-    form {
+    .contact-form {
+        background-color: transparent;
         width: 100%;
-        transition: all 1.5s ease-in-out;
+        transition: all 2.5s ease-in;
+
+        .submit {
+            -webkit-box-shadow: 5px 6px 8px -4px rgba(0,0,0,0.7);
+            -moz-box-shadow: 5px 6px 8px -4px rgba(0,0,0,0.7);
+            box-shadow: 5px 6px 8px -4px rgba(0,0,0,0.7);
+        }
 
         .form-control {
             width: 100%;
             border: none;
             outline: none;
-            border-bottom: 1px solid gray;
             color: #fff;
             font-size: 1.2em;
 
@@ -50,6 +56,12 @@
 
         input {
             height: 3em;
+        }
+
+        textarea {
+            box-sizing: border-box;
+            margin-bottom: 0px !important;
+            padding-bottom: 0px !important;
         }
 
         .submit {

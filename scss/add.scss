@@ -1,0 +1,40 @@
+.main-add {
+    background: linear-gradient(rgba(255, 255, 255, 0.25),rgba(0, 0, 0, 0.9)),url(../images/add.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .form-holder {
+        .add-title {
+            h1 {
+                color: #fff;
+                text-align: center;
+                line-height: 1.2em;
+            }
+        }
+    }
+
+    .add {
+        #contact-form {
+            .form-control {
+
+                &::-webkit-input-placeholder {
+                    color: #fff;
+                }
+            }
+
+            .bgcl {
+                background: rgba(28, 99, 117, 0.9);
+                opacity: 0.9;
+            }
+
+            .lost-found {
+                height: 2.2em;
+            }
+
+            .add-file {
+                height: 1.42em;
+            }
+        }
+    }
+}
