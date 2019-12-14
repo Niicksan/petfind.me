@@ -1,22 +1,26 @@
 .index {
   width: 85%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  margin: 3em auto; }
+  margin: 4em auto 6em; }
   .index .grid-header h1 {
     color: #1C6375;
     text-align: center;
     line-height: 1.2em;
     margin: 1.5em auto; }
   .index .grid-container {
+    min-height: 100%;
     display: grid;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: 48% 48%;
-    grid-gap: 4%;
+    grid-row-gap: 1.3em;
+    grid-column-gap: 1.3em;
     line-height: 1.2em; }
     .index .grid-container .ad-container {
       display: grid;
       grid-template-columns: 39% 58%;
-      grid-gap: 2%;
+      grid-column-gap: 1em;
       align-items: center;
       -webkit-box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.7);
       -moz-box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.7);
@@ -24,14 +28,21 @@
     .index .grid-container img {
       width: 100%;
       height: auto; }
-    .index .grid-container .ad-head-container,
-    .index .grid-container .ad-main-container,
-    .index .grid-container .ad-foot-container {
-      margin-bottom: 0.5em; }
-    .index .grid-container .ad-head-container .bold,
-    .index .grid-container .ad-footer-container .bold {
-      color: #1C6375;
-      font-weight: bold !important; }
+    .index .grid-container .ad-section-container {
+      padding: 0.5em 0; }
+      .index .grid-container .ad-section-container .ad-head-container,
+      .index .grid-container .ad-section-container .ad-main-container,
+      .index .grid-container .ad-section-container .ad-foot-container {
+        margin-bottom: 0.5em; }
+      .index .grid-container .ad-section-container .ad-head-container .bold,
+      .index .grid-container .ad-section-container .ad-footer-container .bold {
+        color: #1C6375;
+        font-weight: bold !important; }
+
+@media screen and (max-width: 480px) {
+  .ad-container {
+    display: grid;
+    grid-template-columns: 100% !important; } }
 
 @media screen and (max-width: 960px) {
   .index .grid-container {
@@ -39,8 +50,7 @@
     grid-template-columns: 100%; }
     .index .grid-container .ad-container {
       display: grid;
-      grid-template-columns: 38% 60%;
-      grid-gap: 2%; }
+      grid-template-columns: 38% 60%; }
       .index .grid-container .ad-container:nth-of-type(even) {
         direction: rtl;
         text-align: left;
