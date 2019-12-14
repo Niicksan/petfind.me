@@ -3,8 +3,10 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /*.about-image {
         text-align: center;
         margin: 0 auto 2.5em;
