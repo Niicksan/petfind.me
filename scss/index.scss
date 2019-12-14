@@ -1,12 +1,14 @@
 .index {
-    width: 80%;
+    width: 85%;
     align-items: center;
     justify-content: center;
     margin: 3em auto;
 
     .grid-header {
         h1 {
+            color: #1C6375;
             text-align: center;
+            line-height: 1.2em;
             margin: 1.5em auto;
         }
     }
@@ -15,12 +17,13 @@
         display: grid;
         grid-template-columns: 48% 48%;
         grid-gap: 4%;
+        line-height: 1.2em;
 
         .ad-container {
             display: grid;
             grid-template-columns: 39% 58%;
             grid-gap: 2%;
-
+            align-items: center;
             -webkit-box-shadow: 5px 6px 8px -4px rgba(0,0,0,0.7);
             -moz-box-shadow: 5px 6px 8px -4px rgba(0,0,0,0.7);
             box-shadow: 5px 6px 8px -4px rgba(0,0,0,0.7);
@@ -29,16 +32,26 @@
         img {
             width: 100%;
             height: auto;
-            vertical-align: central;
         }
 
-        .ad-header {
-            background-color: none;
-            color: #000;
+        .ad-head-container,
+        .ad-main-container,
+        .ad-foot-container {
+            margin-bottom: 0.5em;
         }
 
-        .ad-footer {
-            color: #000;
+        .ad-head-container {
+        }
+
+        .ad-main-container {
+        }
+
+        .ad-head-container,
+        .ad-footer-container {
+            .bold {
+                color: #1C6375;
+                font-weight: bold !important;
+            }
         }
     }
 }
@@ -51,13 +64,13 @@
 
             .ad-container {
                 display: grid;
-                grid-template-columns: 25% 72%;
-                grid-gap: 3%;
+                grid-template-columns: 38% 60%;
+                grid-gap: 2%;
 
                 &:nth-of-type(even) {
                     direction: rtl;
-
                     text-align: left;
+                    padding-left: 0.5em;
                 }
             }
         }
