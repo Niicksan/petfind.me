@@ -13,8 +13,10 @@
   .main-add .add #contact-form .form-control::-webkit-input-placeholder {
     color: #fff; }
   .main-add .add #contact-form .bgcl {
-    background: rgba(28, 99, 117, 0.9);
-    opacity: 0.9; }
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-background: rgba(0, 0, 0, 0.75);
+    -moz-background: rgba(0, 0, 0, 0.75);
+    opacity: 0.8; }
   .main-add .add #contact-form .lost-found {
     height: 2.2em; }
   .main-add .add #contact-form .add-file {
