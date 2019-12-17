@@ -27,12 +27,13 @@ header {
 
 .logo {
     position: relative;
-    margin-left: 1em;
+    margin-left: 0.5em;
 
     .brand {
         height: $menu-height;
         margin-left: 0;
         display: flex;
+        width: 50%;
 
         i {
             font-size: 3em;

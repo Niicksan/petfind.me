@@ -18,11 +18,12 @@ header {
 
 .logo {
   position: relative;
-  margin-left: 1em; }
+  margin-left: 0.5em; }
   .logo .brand {
     height: 6em;
     margin-left: 0;
-    display: flex; }
+    display: flex;
+    width: 50%; }
     .logo .brand i {
       font-size: 3em;
       color: #fff;
