@@ -5,17 +5,22 @@
   text-align: left; }
   .footer .container {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding-top: 1em; }
     .footer .container h4 {
-      padding: 1em 0 1em 0;
+      padding: 1.3em 0 0.3em 0;
       color: #1C6375; }
     .footer .container ul {
       list-style-type: none;
       border-top: 1px solid #fff;
       padding-top: 0.5em; }
+      .footer .container ul li {
+        margin-bottom: 0.25em; }
       .footer .container ul a {
         text-decoration: none;
         color: white; }
+      .footer .container ul .about:hover, .footer .container ul .help:hover {
+        color: #1C6375; }
       .footer .container ul .instagram:hover {
         color: #D3154C;
         transition: all 0.15s ease; }
@@ -27,8 +32,8 @@
         transition: all 0.15s ease; }
   .footer .bottom {
     text-align: center;
-    margin-top: 1.5em;
-    padding-bottom: 1.5em; }
+    margin-top: 1.7em;
+    padding-bottom: 1.7em; }
 
 @media screen and (max-width: 768px) {
   .container {
