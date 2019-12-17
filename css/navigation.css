@@ -24,11 +24,11 @@ header {
     margin-left: 0;
     display: flex; }
     .logo .brand i {
-      font-size: 3.5em;
+      font-size: 3em;
       color: #fff;
       margin: auto;
       margin-right: 0;
-      margin-left: 0.6em;
+      margin-left: 0.8em;
       z-index: 1; }
     .logo .brand img {
       width: 9em;
