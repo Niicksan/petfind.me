@@ -114,13 +114,14 @@ header {
 
         ul {
             display: block;
+            opacity: 0.98;
             max-height: 0;
             overflow: hidden;
-            -webkit-transition: ease-out 0.5s;
-            -moz-transition: ease-out 0.5s;
-            -ms-transition: ease-out 0.5s;
-            -o-transition: ease-out 0.5s;
-            transition: ease-out 0.5s;
+            -webkit-transition: ease-out 0.8s;
+            -moz-transition: ease-out 0.8s;
+            -ms-transition: ease-out 0.8s;
+            -o-transition: ease-out 0.8s;
+            transition: ease-out 0.8s;
             margin-top: 6em;
 
             a {
