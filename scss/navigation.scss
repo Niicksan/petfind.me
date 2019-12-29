@@ -26,9 +26,8 @@ header {
 }
 
 .logo {
-    width: 10%;
+    width: 20%;
     position: relative;
-    margin-left: 0.5em;
     z-index: 1;
 
     .brand {
@@ -39,11 +38,12 @@ header {
         z-index: 1;
 
         i {
-            font-size: 3em;
+            font-size: 1.2em;
             color: $white;
             margin: auto;
+            margin-top: 2.2em;
+            margin-left: 4.75em;
             margin-right: 0;
-            margin-left: 0.7em;
             z-index: 1;
         }
 

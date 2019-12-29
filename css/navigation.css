@@ -17,9 +17,8 @@ header {
     text-decoration: none; }
 
 .logo {
-  width: 10%;
+  width: 20%;
   position: relative;
-  margin-left: 0.5em;
   z-index: 1; }
   .logo .brand {
     height: 6em;
@@ -28,11 +27,12 @@ header {
     width: 50%;
     z-index: 1; }
     .logo .brand i {
-      font-size: 3em;
+      font-size: 1.2em;
       color: #fff;
       margin: auto;
+      margin-top: 2.2em;
+      margin-left: 4.75em;
       margin-right: 0;
-      margin-left: 0.7em;
       z-index: 1; }
     .logo .brand img {
       width: 9em;
