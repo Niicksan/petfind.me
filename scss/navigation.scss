@@ -32,7 +32,7 @@ header {
     .logo {
         z-index: 1;
         justify-content:flex-start;
-        margin-left: 7%;
+        margin-left: 5em;
 
         .brand {
             width: 30%;
@@ -103,7 +103,7 @@ header {
 @media screen and (max-width: 960px) {
     .header-holder {
         .logo {
-            margin-left: 5%;
+            margin-left: 1em;
         }
     }
 
@@ -128,7 +128,7 @@ header {
                 width: 100%;
                 height: 58px;
                 background-color: $navbar-blue;
-                padding: 20px 0px 10px 2.8em;
+                padding: 20px 0px 10px 2.7em;
                 border-radius: 0;
 
                 li {
@@ -164,14 +164,6 @@ header {
                     min-height: 100vh;
                 }
             }
-        }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .header-holder {
-        .logo {
-            margin-left: 3%;
         }
     }
 }
