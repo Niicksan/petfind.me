@@ -17,19 +17,22 @@ header {
     text-decoration: none; }
 
 .logo {
+  width: 10%;
   position: relative;
-  margin-left: 0.5em; }
+  margin-left: 0.5em;
+  z-index: 1; }
   .logo .brand {
     height: 6em;
     margin-left: 0;
     display: flex;
-    width: 50%; }
+    width: 50%;
+    z-index: 1; }
     .logo .brand i {
       font-size: 3em;
       color: #fff;
       margin: auto;
       margin-right: 0;
-      margin-left: 0.8em;
+      margin-left: 0.7em;
       z-index: 1; }
     .logo .brand img {
       width: 9em;
@@ -75,32 +78,33 @@ header {
   top: 2em; }
 
 .menu-icon {
-  display: none; }
+  display: none;
+  cursor: pointer; }
 
 @media screen and (max-width: 960px) {
   .menu {
-    width: 50%;
+    width: 100%;
     height: auto;
     top: 0; }
     .menu ul {
       display: block;
       max-height: 0;
       overflow: hidden;
-      -webkit-transition: max-height 0.3s;
-      -moz-transition: max-height 0.3s;
-      -ms-transition: max-height 0.3s;
-      -o-transition: max-height 0.3s;
-      transition: max-height 0.3s;
-      padding-top: 0.8em; }
+      -webkit-transition: ease-out 0.5s;
+      -moz-transition: ease-out 0.5s;
+      -ms-transition: ease-out 0.5s;
+      -o-transition: ease-out 0.5s;
+      transition: ease-out 0.5s;
+      margin-top: 6em; }
       .menu ul a {
         text-align: left;
         width: 100%;
-        height: 50px;
+        height: 58px;
         background-color: #1C6375;
-        padding: 10px 0px 10px 5%;
+        padding: 20px 0px 10px 2.8em;
         border-radius: 0; }
         .menu ul a li {
-          width: 100%; }
+          width: 80%; }
   .menu-icon {
     width: 100px;
     height: 100px;
@@ -112,5 +116,7 @@ header {
     .menu-icon i {
       font-size: 1.8em;
       color: #fff; }
+  #menuToggle:checked ~ .menu {
+    width: 50%; }
   #menuToggle:checked ~ ul {
     min-height: 100vh; } }
