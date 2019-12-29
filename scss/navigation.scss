@@ -27,31 +27,21 @@ header {
 
 .header-holder {
     width: 85%;
-    margin: auto;
+    display: flex;
 
     .logo {
         z-index: 1;
+        justify-content:flex-start;
+        margin-left: 7%;
 
         .brand {
+            width: 30%;
             height: $menu-height;
-            margin-left: 0;
             display: flex;
-            flex-direction: row-reverse;
-            width: 20%;
-
-            i {
-                width: 60%;
-                font-size: 1.2em;
-                color: $white;
-                margin: auto;
-                margin-top: 2.3em;
-                margin-left: -5.7em;
-                z-index: 2;
-            }
+            flex-direction: row;
 
             img {
                 width: 9em;
-                background-color: transparent;
             }
         }
     }
@@ -111,6 +101,12 @@ header {
 }
 
 @media screen and (max-width: 960px) {
+    .header-holder {
+        .logo {
+            margin-left: 5%;
+        }
+    }
+
     .menu {
         width: 100%;
         height: auto;
@@ -168,6 +164,14 @@ header {
                     min-height: 100vh;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-holder {
+        .logo {
+            margin-left: 3%;
         }
     }
 }

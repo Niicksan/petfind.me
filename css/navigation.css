@@ -18,26 +18,18 @@ header {
 
 .header-holder {
   width: 85%;
-  margin: auto; }
+  display: flex; }
   .header-holder .logo {
-    z-index: 1; }
+    z-index: 1;
+    justify-content: flex-start;
+    margin-left: 7%; }
     .header-holder .logo .brand {
+      width: 30%;
       height: 6em;
-      margin-left: 0;
       display: flex;
-      flex-direction: row-reverse;
-      width: 20%; }
-      .header-holder .logo .brand i {
-        width: 60%;
-        font-size: 1.2em;
-        color: #fff;
-        margin: auto;
-        margin-top: 2.3em;
-        margin-left: -5.7em;
-        z-index: 2; }
+      flex-direction: row; }
       .header-holder .logo .brand img {
-        width: 9em;
-        background-color: transparent; }
+        width: 9em; }
 
 .menu {
   width: 75%;
@@ -81,6 +73,8 @@ header {
   cursor: pointer; }
 
 @media screen and (max-width: 960px) {
+  .header-holder .logo {
+    margin-left: 5%; }
   .menu {
     width: 100%;
     height: auto;
@@ -119,3 +113,7 @@ header {
     width: 50%; }
   #menuToggle:checked ~ ul {
     min-height: 100vh; } }
+
+@media screen and (max-width: 480px) {
+  .header-holder .logo {
+    margin-left: 3%; } }
