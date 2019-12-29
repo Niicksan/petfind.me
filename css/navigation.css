@@ -16,29 +16,28 @@ header {
   header a {
     text-decoration: none; }
 
-.logo {
-  width: 20%;
-  position: relative;
-  z-index: 1; }
-  .logo .brand {
-    height: 6em;
-    margin-left: 0;
-    display: flex;
-    width: 50%;
+.header-holder {
+  width: 85%;
+  margin: auto; }
+  .header-holder .logo {
     z-index: 1; }
-    .logo .brand i {
-      font-size: 1.2em;
-      color: #fff;
-      margin: auto;
-      margin-top: 2.2em;
-      margin-left: 4.75em;
-      margin-right: 0;
-      z-index: 1; }
-    .logo .brand img {
-      width: 9em;
+    .header-holder .logo .brand {
       height: 6em;
-      position: absolute;
-      left: 3.5em; }
+      margin-left: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      width: 20%; }
+      .header-holder .logo .brand i {
+        width: 60%;
+        font-size: 1.2em;
+        color: #fff;
+        margin: auto;
+        margin-top: 2.3em;
+        margin-left: -5.7em;
+        z-index: 2; }
+      .header-holder .logo .brand img {
+        width: 9em;
+        background-color: transparent; }
 
 .menu {
   width: 75%;
